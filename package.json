@@ -1,0 +1,34 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "An opfs-sahpool dialect for Kysely",
+  "main": "dist/sahpool-dialect.umd.js",
+  "module": "dist/sahpool-dialect.es.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "test": "vitest",
+    "lint": "eslint --config eslint.config.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "eslint": "^9.11.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0",
+    "vite": "^5.4.7"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "^3.46.1-build3",
+    "kysely": "^0.27.4",
+    "lru-cache": "^11.0.1",
+    "xxhash-wasm": "^1.0.2"
+  }
+}
